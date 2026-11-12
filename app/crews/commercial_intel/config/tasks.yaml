@@ -1,0 +1,16 @@
+ingest_task:
+  description: 'Ingest documents of {company} about {query}. Context: {context}'
+  expected_output: 'List of documents and available data'
+  agent: document_ingestor
+analysis_task:
+  description: 'Analyze with RAG: {query} for {company}. Return numbers with [SOURCE]'
+  expected_output: 'Analysis with KPI table, numbers and cited sources'
+  agent: financial_analyst
+research_task:
+  description: 'Research external market for {company} about {query} using MCP'
+  expected_output: '3 trends, 3 competitors, 2 risks, 2 opportunities with sources'
+  agent: market_researcher
+report_task:
+  description: 'Create final executive report for {company} about {query}. Include summary, KPIs, market, recommendations, sources.'
+  expected_output: 'Markdown report: Summary, KPIs, Analysis, Market, Recommendations, Sources'
+  agent: report_writer_qa

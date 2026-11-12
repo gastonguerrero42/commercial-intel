@@ -1,0 +1,1 @@
+[{"id":1,"query":"What was margin per client in Q3?","expected_contains":["SOURCE"]},{"id":2,"query":"Which clients grew most?","expected_contains":["SOURCE"]},{"id":3,"query":"Give me data that does NOT exist","expected_contains":["No data"]}]
